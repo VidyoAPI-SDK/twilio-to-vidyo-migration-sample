@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="in-call-toolbar---theater-mode-button" transform="translate(-764.000000, -23.000000)" fill="#FFFFFF">
+            <g id="in-call-toolbar">
+                <g id="share" transform="translate(764.000000, 23.000000)">
+                    <g id="Layer_1">
+                        <g id="Group">
+                            <path d="M27.29375,0 L0.70625,0 C0.33125,0 0,0.3125 0,0.69375 L0,17.3 C0,17.6875 0.325,17.99375 0.70625,17.99375 L27.29375,17.99375 C27.66875,17.99375 28,17.68125 28,17.3 L28,0.69375 C28,0.3125 27.675,0 27.29375,0 Z M26,16 L2,16 L2,2 L26,2 L26,16 Z" id="Shape"></path>
+                            <path d="M16.90625,22 C18.65625,21.96875 19.5,21.75625 18.71875,21.21875 C17.9375,20.675 16.9375,20.2625 16.90625,19.8125 C16.8875,19.58125 16.8,17 16.8,17 L14,17 L11.2,17 C11.2,17 11.10625,19.58125 11.09375,19.8125 C11.0625,20.25625 10.0625,20.675 9.28125,21.21875 C8.5,21.7625 9.34375,21.96875 11.09375,22 L16.90625,22 Z" id="Shape"></path>
+                            <path d="M14.7222222,9.72321429 L14.7222222,12.6115513 L20.5,8.29486607 L14.7222222,3.9375 L14.7222222,6.6359933 C7.73472222,6.6359933 7.5,14.0625 7.5,14.0625 C9.47708333,10.8306362 10.9305556,9.72321429 14.7222222,9.72321429 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

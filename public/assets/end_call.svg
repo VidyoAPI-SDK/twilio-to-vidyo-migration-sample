@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>CA27E08A-6132-4D55-8F7F-39A066D1429A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+        <path d="M15.00174,8 C21.0665345,8.00006013 26.1335202,10.2559961 27.3579341,13.2654991 C28.1506335,15.2138927 27.9857736,16.778215 27.9857736,16.778215 C27.985775,17.4529769 27.4407919,17.9999769 26.7685179,17.9999755 L21.0879791,18 C20.415759,17.9999568 19.8707815,17.4529624 19.8707385,16.7782546 L19.8707945,14.3347213 C19.8707733,13.6699935 20.3996632,13.1292534 21.058117,13.1133396 C19.7171985,10.9326287 18.1798733,11.1657129 15.0017626,11.1657216 C11.8236451,11.1657371 10.3905993,10.9326408 9.05237049,13.1129074 C9.6438057,13.1710463 10.1327182,13.6955103 10.132741,14.3347137 L10.1327942,16.7781919 C10.1327009,17.4529412 9.58771098,17.999948 8.91551793,17.999973 L3.23504473,17.9999399 C2.56271547,17.9999653 2.01775832,17.4529915 2.0177837,16.7781741 C2.0177837,16.7781741 1.83436892,15.2592084 2.64560749,13.2654445 C3.87008646,10.2559754 8.93708809,8.00006928 15.00174,8 Z" id="path-3"></path>
+    </defs>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Decline-button-Components/Forms/Buttons/In-call/Decline">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="mask"></g>
+            <g id="Icon-color-Style/Сolors/Red/red_1" opacity="0.5" mask="url(#mask-2)" fill="#D40E00">
+                <rect id="color" x="0" y="0" width="48" height="48"></rect>
+            </g>
+            <g id="Icon-Style/Icons/Misc/ic_end_call" mask="url(#mask-2)">
+                <g transform="translate(9.000000, 9.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="ic_end_call" stroke="none" fill="#FFFFFF" fill-rule="evenodd" opacity="0.699999988" xlink:href="#path-3"></use>
+                    <g id="Icon-color-Style/Сolors/Gray/neutral-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-4)">
+                        <rect id="color" fill="#FCFCFC" x="0" y="0" width="30" height="30"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

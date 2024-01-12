@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <script defer src='app.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/vidyoclient-nativewebrtc-sdk/dist/VidyoClient.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Sample</title>
+  </head>
+  <body>
+    <main>
+      <div class="side-panel">
+        <p>
+          <label for="name">Display name:</label>
+          <input type="text" id="name" value="User1" size="20" placeholder="Display name" required>
+        </p>
+        <p>
+          <label for="name">Camera:</label>
+          <select id="cameraSelect"></select>
+        </p>
+        <p>
+          <label for="name">Microphone:</label>
+          <select id="microphoneSelect"></select>
+        </p>
+        <p>
+          <label for="name">Speaker:</label>
+          <select id="speakerSelect"></select>
+        </p>
+        <div id="provider" class="provider-info"></div>
+      </div>
+      <div class="renderer-container">
+        <div class="meeting-link">
+          <span>Meeting link:</span>
+          <img src="./assets/copy_white.svg" title="Copy to clipboard" id="copyBtn">
+          <img src="./assets/new_tab.svg" title="Open in new tab" id="newTabBtn">
+          <span id="meetingLink"></span>
+        </div>
+        <div id="renderer" class="renderer"></div>
+        <div class="controls">
+          <button id="speakerOn" title="Mute speaker" class="speakeron"></button>
+          <button id="speakerOff" title="Unmute speaker" class="speakeroff hidden"></button>
+          <button id="cameraOn" title="Mute camera" class="cameraon"></button>
+          <button id="cameraOff" title="Unmute camera" class="cameraoff hidden"></button>
+          <button id="btnStart" title="Start call" class="btnstart"></button>
+          <button id="btnEnd" title="End call" class="btnend"></button>
+          <button id="micOn" title="Mute microphone" class="micon"></button>
+          <button id="micOff" title="Unmute microphone" class="micoff hidden"></button>
+          <button id="share" title="Share content" class="sharecontent"></button>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div>Remote Participants:</div>
+        <div id="participants-list"></div>
+      </div>
+      <div id="loadingPopUp" class="loading-popup" data-text="">
+        <div class="loader"></div>
+      </div>
+    </main>
+  </body>
+</html>

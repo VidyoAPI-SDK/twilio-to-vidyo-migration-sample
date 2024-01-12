@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 300;
+    background: #363636;
+    color: white;
+}
+main {
+    height: 100%;
+    display: grid;
+    grid-template:
+        "s m r"  / 350px auto 300px
+}
+.logo {
+    width: 100%;
+    margin: 20px 0;
+}
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    overflow: auto;
+    grid-area: r;
+}
+
+.right-panel #participants-list {
+    padding: 10px;
+}
+
+.right-panel #participants-list div{
+    padding: 15px 5px;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    overflow: auto;
+    grid-area: s;
+}
+.side-panel button {
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    box-shadow: none;
+    color: #fff;
+    height: 36px;
+    outline: none;
+}
+.side-panel select,
+.side-panel input {
+    width: 100%;
+    height: 36px;
+    margin: 20px 0;
+    display: inline-block;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 3px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: hsla(0,0%,100%,.15);
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 100% / 10%);
+    color: inherit;
+    outline: none;
+}
+
+.side-panel select option {
+    background: #545454;
+}
+.renderer-container {
+    display: grid;
+    grid-template-rows: 40px 1fr 60px;
+    background-color: #1a1a1a;
+    color: inherit;
+    grid-area: m;
+}
+
+.meeting-link {
+    display: grid;
+    grid-template-columns: auto auto auto auto 24px auto;
+    justify-self: end;
+    visibility: hidden;
+    padding: 10px 20px;
+}
+.in-call .meeting-link {
+    visibility: visible;
+}
+.meeting-link img {
+    padding: 0 5px;
+    height: 20px;
+    opacity: 0.5;
+}
+.meeting-link img:hover {
+    opacity: 0.75;
+}
+.meeting-link img:active {
+    opacity: 1;
+}
+.meeting-link span {
+    line-height: 20px;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.renderer.twilio {
+    display: flex;
+    width: 100%;
+    z-index: 10;
+}
+
+.renderer.twilio div {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.renderer.twilio div video {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls button {
+    position: relative;
+    border: none;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+.controls button:hover {
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 100% / 10%);
+}
+.controls button:active {
+    background-color: #262626;
+}
+.controls button:disabled {
+    pointer-events: none;
+    opacity: 50%;
+}
+input[type="text"]:disabled {
+    background: rgba(239, 239, 239, 0.3);
+}
+.btnstart {
+    background-color: transparent;
+    background-image: url(./assets/callStart.png);
+    background-size: 28px;
+}
+.btnend {
+    background-color: #6e1e14;
+    background-image: url(./assets/end_call.svg);
+}
+body.in-call .btnstart {
+    display: none;
+}
+body:not(.in-call) .btnend,
+body:not(.in-call) .sharecontent {
+    display: none;
+}
+.cameraon {
+    background-color: transparent;
+    background-image: url(./assets/cameraOn.png);
+    background-size: 28px;
+}
+.cameraoff {
+    background-color: transparent;
+    background-image: url(./assets/cameraOff.png);
+    background-size: 28px;
+}
+.micon {
+    background-color: transparent;
+    background-image: url(./assets/microphoneOn.png);
+    background-size: 28px;
+}
+.micoff {
+    background-color: transparent;
+    background-image: url(./assets/microphoneOff.png);
+    background-size: 28px;
+}
+
+.speakeron {
+    background-color: transparent;
+    background-image: url(./assets/speakerOn.png);
+    background-size: 28px;
+}
+.speakeroff {
+    background-color: transparent;
+    background-image: url(./assets/speakerOff.png);
+    background-size: 28px;
+}
+
+.sharecontent {
+    background-color: transparent;
+    background-image: url(./assets/share-content.svg);
+    background-size: 28px;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading-popup {
+    min-width: 200px;
+    max-width: 300px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto 50px;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    background-color: #262626;
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 10000;
+}
+.loading-popup::before {
+    content: attr(data-text);
+    margin-bottom: 10px;
+    line-height: 22px;
+    padding: 10px;
+}
+.loading-popup:not([data-text]),
+.loading-popup[data-text=""] {
+    display: none;
+}
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #5c92d6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.provider-info {
+    position: absolute;
+    bottom: 50px;
+    font-size: 1.2em;
+}
