@@ -10,10 +10,11 @@ The application supports the following features:
 * allow users to turn on/off their camera, microphone or speaker
 
 ## Running the Application using Twilio SDK
+
 Twilio Video API requires  API keys for authentication.
  
 ### Twilio api keys
-copy the `env.template` file into a `.env` file and enter your twilio keys
+<strong>Copy the `env.template` file into a `.env` file and enter your twilio keys</strong>
  
 * `TWILIO_ACCOUNT_SID` - from https://console.twilio.com/
 * `TWILIO_API_KEY_SID` and `TWILIO_API_KEY_SECRET`- from https://console.twilio.com/us1/account/keys-credentials/api-keys
@@ -27,8 +28,8 @@ copy the `env.template` file into a `.env` file and enter your twilio keys
 * Click on the call button to create a rooom and enter it. A `meeting link` is generated and displayed in the UX. Other users can join the room by opening the meeting link in a new tab.
 
 ## Running the Application using VidyoClient SDK
+<strong>copy the `env.template` file into a `.env` file </strong>
 
-copy the `env.template` file into a `.env` file
 * set `CLIENT_PROVIDER=VIDYO` in the `.env` file
 
 ### Run
