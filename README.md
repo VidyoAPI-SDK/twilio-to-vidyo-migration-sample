@@ -11,7 +11,7 @@ The application supports the following features:
 
 <strong>Important Note</strong>
 
-To keep the demo simple, the Vidyo SDK sample creates a room "on demand" and provides you with a meetingURL so you can invite others to join. That is strictly for demo/evaluation purposes. In a real production setting, the room creation/meeting link generation functionality is handled by a backend VidyoPlatform component referred to as VidyoPortal. The VidyoPortal provides a web interface (and server API) for  creating meeting rooms, generating meeting links & moderating meetings. Please refer to [Vidyo Developer Platform](https://www.vidyo.com/develop-video-app-platform) for details.
+To keep the demo simple, the Vidyo SDK sample creates a room "on demand" and provides you with a meetingURL so you can invite others to join. That is strictly for demo/evaluation purposes. In a real production setting, the room creation/meeting link generation functionality is handled by a backend VidyoPlatform component referred to as VidyoPortal. The VidyoPortal provides a web interface (and REST/SOAP APIs) for  creating meeting rooms, generating meeting links & moderating meetings. Please refer to [Vidyo Developer Platform](https://www.vidyo.com/develop-video-app-platform) for details.
 
 ## Running the Application using Twilio SDK
 
