@@ -61,6 +61,8 @@ const setMeetingLink = (roomName, portal) => {
 const usp = new URLSearchParams(window.location.search);
 let roomName = usp.get('roomName') ?? (provider === 'TWILIO' ? `room_${generateString(10)}` : '');
 let portal = usp.get('portal') ?? '';
+document.getElementById('portal').value = portal;
+document.getElementById('room').value = roomName;
 document.getElementById('name').value = `User_${generateString(6)}`;
 
 /*
@@ -71,6 +73,8 @@ _________________________________TWILIO_________________________________
  */
 if(provider === 'TWILIO') {
     document.getElementById('renderer').classList.add('twilio');
+} else {
+    document.getElementById('portal').parentNode.classList.remove('hidden');
 }
 /*
 __________________________________VIDYO_________________________________
@@ -240,17 +244,10 @@ __________________________________VIDYO_________________________________
  */ 
 if(provider === 'VIDYO') {
     const connect = async () => {
-        if(!roomName) {
-            loadingPopUp.setAttribute('data-text', 'Creating a room...');
-            // create new room
-            let res = await fetch('https://vidyo-adhoc-zsdgxlqgkq-uc.a.run.app/api/v1/rooms', {method: 'POST'});
-            res = await res.json();
-            const params = res.roomUrl.split('/join/');
-            portal = params[0];
-            roomName = params[1];
-            loadingPopUp.setAttribute('data-text', 'Joining a call...');
-        }
 
+        portal = document.getElementById('portal').value;
+        roomName = document.getElementById('room').value;
+        
         await vidyoConnector.ConnectToRoomAsGuest({
             host: portal,
             roomKey: roomName,

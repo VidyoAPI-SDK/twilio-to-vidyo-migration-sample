@@ -9,10 +9,6 @@ The application supports the following features:
 * enumerate attached cameras, microphones and speakers & allow users to select the device to use
 * allow users to turn on/off their camera, microphone or speaker
 
-<strong>Important Note</strong>
-
-To keep the demo simple, the Vidyo SDK sample creates a room "on demand" and provides you with a meetingURL so you can invite others to join. That is strictly for demo/evaluation purposes. In a real production setting, the room creation/meeting link generation functionality is handled by a backend VidyoPlatform component referred to as VidyoPortal. The VidyoPortal provides a web interface (and REST/SOAP APIs) for  creating meeting rooms, generating meeting links & moderating meetings. Please refer to [Vidyo Developer Platform](https://www.vidyo.com/develop-video-app-platform) for details.
-
 ## Running the Application using Twilio SDK
 
 Twilio Video API requires  API keys for authentication.
@@ -29,9 +25,18 @@ Twilio Video API requires  API keys for authentication.
 * `npm run build`
 * `npm start`
 * open http://127.0.0.1:8080/ in browser
-* Click on the call button to create a rooom and enter it. A `meeting link` is generated and displayed in the UX. Other users can join the room by opening the meeting link in a new tab.
+* Click on the call button to create a rooom and enter it. 
+* A `meeting link` is generated and displayed in the UX. Other users can join the room by opening the meeting link in a new tab.
+  
+  ![meeting link](twilioMeetingLink.png)
+  
 
 ## Running the Application using VidyoClient SDK
+To run the application using the VidyoPlatform, you will need a VidyoPlatform account.
+### Create a VidyoPlatform trial account
+Create a trial account with VidyoPlatform  at  https://www.vidyo.com/develop-video-app-platform. The account setup process will explain how you can create meeting rooms and generate meeting links to invite other users to join. 
+
+### Building the application
 <strong>copy the `env.template` file into a `.env` file </strong>
 
 * set `CLIENT_PROVIDER=VIDYO` in the `.env` file
@@ -43,8 +48,12 @@ Twilio Video API requires  API keys for authentication.
 
 then open http://127.0.0.1:8080/ in browser
 
-### Create/Join room 
-* Clicking on the call button creates a room and enters the user into the room. A `meeting link` is generated and displayed in the UX. Other users can join the room by opening the meeting link in a new tab.
 
 
+### Join room 
+* Enter the *portal* and *roomName* fields for the room you have created in your Vidyo account
+* Clicking on the call button to join the room. 
+* A `meeting link` is generated and displayed in the UX. Other users can join the room by opening the meeting link in a new tab.
+
+![meeting link](vidyoMeetingLink.png)
 
